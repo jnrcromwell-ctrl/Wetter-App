@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wetter-App</title>
+    <link rel="stylesheet" href="Src/style.css">
 </head>
 <body>
     <div class="weather-app">
     <header>
        <form id="search-form">
-        <input type="text" placeholder="Enter city..." required>
-        <input type="submit" placeholder="Search">
+        <input type="text" class=" input" placeholder="Enter city..."  required>
+        <input type="submit" class=" submit" placeholder="Search">
        </form>
     </header>
     <main>
-        <div class="weather-data">
-        <div class="weather-city">
-            <h1>Paris</h1>
+        <div class="weather-app-data">
+        <div >
+            <h1 class="weather-app-city">Paris</h1>
+             <p class="weather-app-details">
+                 Tuesday 19:13,clear sky<br>
+                 Humdity <strong>87%</strong>,Wind:<strong>4.6km/h</strong>
+        
         </div>
-        <div class="weather-deatails">
-            <p>🌥️12℃</p>
-        </div>
+        <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌥️</div>
+            <div class="weather-app-digit">12</div> 
+            <div class="weather-app-unit">℃</div>
         </div>
 
-        <p>Tuesday 19:13,clear sky<br>
-        Humdity 87%,Wind 4.6km/h
-        </p>
+       
        
         
     </main>
     <footer>
-        <p>This project was coded by <a href="jnrcromwell-ctrl">Olivia Cromwellgit</a> is <a href="https://github.com/jnrcromwell-ctrl/">is open-source on GitHub</a>
-        <a href="https://wetter-upp.netlify.app/">and hosted on Netlify</a>
+        <p>This project was coded by <a href="jnrcromwell-ctrl">Olivia Cromwell</a> is <a href="https://github.com/jnrcromwell-ctrl/">is open-source on GitHub</a>
+        and <a href="https://wetter-upp.netlify.app/">hosted on Netlify</a>
         </p>
     </footer>
     </div>
