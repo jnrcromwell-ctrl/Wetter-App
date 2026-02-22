@@ -59,17 +59,18 @@ main{
     display: flex;
 }
 .weather-app-digit{
-    font-size: 80px;
+    font-size: 88px;
+    line-height: 88px;
     font-weight: bold;
-    margin-left: 15px;
+   
 }
 .weather-app-icon{
-    font-size: 44px;
-    margin-top: 22px;
+    width: 88px;
+    height: 88px;
 }
 .weather-app-unit{
     margin-top: 16px;
-    font-size: 25px;
+    font-size: 28px;
 }
 footer{
     border-top: 1px solid rgb(181, 178, 178);
