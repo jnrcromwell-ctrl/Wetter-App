@@ -72,6 +72,34 @@ main{
     margin-top: 16px;
     font-size: 28px;
 }
+.wetter-forcast{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.wetter-date{
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color:rgb(39,33,66,0.4);
+    margin-bottom: 10px;
+}
+.wetter-icon{
+    font-size: 34px;
+    text-align: center;
+}
+.wetter-temperatures{
+    display: flex;
+     text-align: center;
+     color: #f4789d;
+     justify-content: center;
+     margin-top: 10px;
+   
+}
+.wetter-temperature{
+     padding: 0 10px;
+    
+}
 footer{
     border-top: 1px solid rgb(181, 178, 178);
     margin: 30px 0 0 0;
