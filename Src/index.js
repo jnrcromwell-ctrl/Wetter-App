@@ -54,6 +54,11 @@ function submitBox(event) {
   searchCity(searchElement.value);
 }
 
+function getForecast(){
+
+}
+
+
 function displayFeatures() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
