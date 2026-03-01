@@ -63,25 +63,25 @@ function getForecast(city){
     axios.get(apiUrl).then(displayFeatures);
 }
 
-function formateDay(timestamp){
-  let date= new Date(timestamp *1000);
- let days = ["Sun", "Mon", "Tue", "Wed", "Thus","Fri","Sat"];
+function formatDay(timestamp){
+  let date= new Date(timestamp * 1000);
+ let days = ["Sun", "Mon", "Tue", "Wed", "Thus", "Fri", "Sat"];
+
  return days[date.getDay()];
 }
 
 function displayFeatures(response) {
-
-
+console.log(response.data);
  
   let forecastHTML = "";
 
-  response.data.daily.forEach(function (day,index) {
-    if(index < 5){
+  response.data.daily.forEach(function (day, index) {
+    if( index < 5){
     forecastHTML =
       forecastHTML +
       `
      <div class="wetter-day">
-       <div class="wetter-date">${formateDay(day.time)}</div>
+       <div class="wetter-date">${formatDay(day.time)}</div>
         <img src="${day.condition.icon_url}" class="wetter-icon"/>
         
           <div class="wetter-temperatures">
